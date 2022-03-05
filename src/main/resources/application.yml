@@ -1,0 +1,22 @@
+server.port:
+  8080
+    
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    
+spring:
+ thymeleaf:
+  mode: HTML
+ datasource:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/testdb?serverTimezone=JST
+  username: root
+  password: root
+#  datasource:
+#    url:  jdbc:oracle:thin:@localhost:1521:orcl
+#    username: SYS
+#    password: SysD@t@2021
+#    driverClassName: oracle.jdbc.driver.OracleDriver
