@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer th:src="@{hello/index.bundle.js}"></script><script defer th:src="@{js/hello.bundle.js}"></script><script defer th:src="@{top/index.bundle.js}"></script><script defer src="./hello/index.bundle.js"></script><script defer src="./js/hello.bundle.js"></script><script defer src="./top/index.bundle.js"></script><script defer src="./hello/index.bundle.js"></script><script defer src="./js/hello.bundle.js"></script><script defer src="./top/index.bundle.js"></script></head>
+    <script defer th:src="@{hello/index.bundle.js}"></script>
+    <script defer th:src="@{js/hello.bundle.js}"></script>
+    <script defer th:src="@{top/index.bundle.js}"></script>
+    <script defer src="./hello/index.bundle.js"></script><script defer src="./js/hello.bundle.js"></script><script defer src="./top/index.bundle.js"></script><script defer src="./hello/index.bundle.js"></script><script defer src="./js/greeting.bundle.js"></script><script defer src="./js/hello.bundle.js"></script><script defer src="./js/sample_result.bundle.js"></script><script defer src="./js/sample1.bundle.js"></script><script defer src="./top/index.bundle.js"></script></head>
+
 </head>
+</head>
+
 <body>
     <div id="content_top"></div>
+    <div style="margin-top:500px;">
+        <a th:href="@{${url}}"><span th:text="${link_message}">リンク</span></a>
+    </div>
 </body>
+
 </html>
